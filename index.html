@@ -8,35 +8,104 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <style>
-        h1.section-title { font-size: 50px; text-align: center; margin-top: 40px; }
-        .search-box input { width: 100%; max-width: 300px; padding: 10px; border-radius: 4px; }
-        .search-box button { padding: 10px 20px; background-color: #ff6f00; border: none; border-radius: 4px; color: white; }
-        .food-category img { border-radius: 50%; width: 120px; height: 120px; object-fit: cover; }
-        .carousel-inner img { max-width: 100%; height: auto; }
-        .promo-video {
-            width: 50%;
-            max-width: 600px; /* optional: keeps it from being too big on large screens */
-            border-radius: 8px; /* optional styling */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
         }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            line-height: 1.6;
+            background-color: #fff;
+            color: #000;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: auto;
+        }
+
+        a, button {
+            text-decoration: none;
+            border: none;
+            outline: none;
+            cursor: pointer;
+        }
+
+        /* ---------------- HEADERS ---------------- */
+        h1.section-title { 
+            font-size: 50px; 
+            text-align: center; 
+            margin-top: 40px; 
+        }
+
+        /* ---------------- SEARCH BOX ---------------- */
+        .search-box input { 
+            width: 100%; 
+            max-width: 300px; 
+            padding: 10px; 
+            border-radius: 4px; 
+        }
+
+        .search-box button { 
+            padding: 10px 20px; 
+            background-color: #ff6f00; 
+            border: none; 
+            border-radius: 4px; 
+            color: white; 
+        }
+
+        /* ---------------- FOOD CATEGORY ---------------- */
+        .food-category img { 
+            border-radius: 50%; 
+            width: 120px; 
+            height: 120px; 
+            object-fit: cover; 
+        }
+
+        .food-category-section {
+            background-color: #F4F6F8;
+        }
+
+        /* ---------------- NAVBAR ---------------- */
         .navbar-nav {
             gap: 30px; 
         }
         .navbar-nav .nav-link {
             font-size: 16px;   
             font-weight: 500;  
+            color: #000 !important;
         }
+        .navbar-nav .nav-link:hover {
+            color: #ff6f00 !important;
+        }
+
+        /* ---------------- BUTTONS ---------------- */
         .btn-swiggy {
-        background-color: #ff6f00;
-        color: white;
+            background-color: #ff6f00;
+            color: white;
         }
 
-        .food-category-section {
-        background-color: #F4F6F8;
-        }
-
+        /* ---------------- ICONS ---------------- */
         .swiggy-icon {
-        font-size: 50px;
-        color: #ff6f00;
+            font-size: 50px;
+            color: #ff6f00;
+        }
+
+        /* ---------------- VIDEO ---------------- */
+        .promo-video {
+            width: 50%;
+            max-width: 600px;
+            border-radius: 8px;
+        }
+
+        /* ---------------- CAROUSEL ---------------- */
+        .carousel-inner img { 
+            max-width: 100%; 
+            height: auto; 
         }
     </style>
 </head>

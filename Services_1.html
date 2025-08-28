@@ -8,6 +8,12 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <style>
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: auto;
+        }
         /* Navbar */
         .navbar-nav {
             gap: 30px; 
@@ -44,6 +50,15 @@
             border-radius: 10px;
         }
 
+        /* Responsive Navbar */
+        @media (max-width: 991px) {
+            .navbar-nav {
+                gap: 15px; /* reduce gap on smaller screens */
+            }
+            .text-center img {
+                height: 35px; /* shrink logo slightly */
+            }
+        }
     </style>
 </head>
 <body>
