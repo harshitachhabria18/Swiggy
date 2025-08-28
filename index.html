@@ -7,202 +7,256 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <style>
+        h1.section-title { font-size: 50px; text-align: center; margin-top: 40px; }
+        .search-box input { width: 100%; max-width: 300px; padding: 10px; border-radius: 4px; }
+        .search-box button { padding: 10px 20px; background-color: #ff6f00; border: none; border-radius: 4px; color: white; }
+        .food-category img { border-radius: 50%; width: 120px; height: 120px; object-fit: cover; }
+        .carousel-inner img { max-width: 100%; height: auto; }
+        .promo-video {
+            width: 50%;
+            max-width: 600px; /* optional: keeps it from being too big on large screens */
+            border-radius: 8px; /* optional styling */
+        }
+        .navbar-nav {
+            gap: 30px; 
+        }
+        .navbar-nav .nav-link {
+            font-size: 16px;   
+            font-weight: 500;  
+        }
+        .btn-swiggy {
+        background-color: #ff6f00;
+        color: white;
+        }
+
+        .food-category-section {
+        background-color: #F4F6F8;
+        }
+
+        .swiggy-icon {
+        font-size: 50px;
+        color: #ff6f00;
+        }
+    </style>
 </head>
 <body>
 
-    <div style="text-align: center; margin-top:40px;"><img src="swiggy.png"></div>
+    <div class="text-center mt-4">
+        <img src="swiggy.png" alt="Swiggy Logo">
+    </div>
 
-    <nav class="navbar navbar-expand-sm justify-content-center">
-        <ul class="navbar nav" role="tablist">
-            <li class="nav-item">
-                <a style="padding-right: 20px;" class="nav-link" href="Home_1.html">
-                    Home
-                </a>
-            </li>
+   <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
 
-            <li class="nav-item">
-                <a style="padding-right: 20px;" class="nav-link" href="Services_1.html">
-                    Services
-                </a>
-            </li>
+            <!-- Toggler Button -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" 
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-            <li class="nav-item">
-                <a style="padding-right: 20px;" class="nav-link" href="About_1.html">
-                    About
-                </a>
-            </li>
-        </ul>     
-    </nav> 
+            <!-- Collapsible Menu -->
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Services_1.html">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="About_1.html">About</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
-    <h1 style="font-size:50px; text-align:center;">"From plate to palate, we bring the world of flavors to your door!"</h1> 
+    <h1 class="text-center display-5 fw-bold mt-4">
+        "From plate to palate, we bring the world of flavors to your door!"
+    </h1>
     
-    <p style="font-size:20px; text-align:center; line-height: 30px; margin-bottom:50px;margin-top: 30px;"> Welcome to Swiggy Delight! <br>Experience the joy of food delivery like never before. <br>From your favorite local restaurants to new culinary adventures, we've got your cravings covered!</p>
+    <p class="text-center fs-5 lh-lg my-4">
+        Welcome to Swiggy Delight! <br>
+        Experience the joy of food delivery like never before. <br>
+        From your favorite local restaurants to new culinary adventures, we've got your cravings covered!
+    </p>
 
-    <div style="text-align:center;margin-bottom: 30px;"><a style="font-size:20Spx; background-color: black; padding: 15px 35px 15px 35px; color: white;" href=" https://www.swiggy.com/">Read more</a></div>
-
-    <hr style="width: 60%; margin: auto;">
-
-
-    <h1 style="font-size:50px; text-align:center;margin-top: 30px;">Order Food Online</h1>
-    <h3 style="text-align:center">From The Best Resturants Near You</h3>    
-
-    <div style="display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 20px;">
-        <a href="https://www.swiggy.com/search"><input type="text" style="padding: 10px;
-        width: 300px;
-        border: 2px;
-        border-radius: 4px;
-        font-size: 16px;" placeholder="Search Food Item"></a>
-        <button style="padding: 10px 20px;
-        background-color: #ff6f00;
-        color: white;
-        border: none;
-        border-radius: 4px;
-        margin-left: 10px;
-        cursor: pointer;">Search</button>
+    <div class="text-center mb-4">
+        <a href="https://www.swiggy.com/" class="btn btn-dark btn-lg">Read more</a>
     </div>
 
-    <div class="container-fluid mt-4 pt-4 pb-5 text-center" style="background-color: #F4F6F8;">
-        <h2 style="text-align: left;font-family: Gilroy;">What's on your mind?</h2>
-        <div class="row" style="margin-top: 20px;">
-            <div class="col-sm-2" style="margin-left: 10px;">
+    <h1 class="text-center display-4 mt-5">Order Food Online</h1>
+    <h3 class="text-center">From The Best Restaurants Near You</h3>      
+
+    <div class="d-flex justify-content-center align-items-center mt-3">
+        <a href="https://www.swiggy.com/search" class="form-control w-25 me-2" style="text-decoration:none; color:inherit; display:inline-block; text-align:left;">
+            Search Food Item
+        </a>
+        <a href="https://www.swiggy.com/search" class="btn btn-swiggy">Search</a>
+    </div>
+
+    <div class="container-fluid mt-4 pt-4 pb-5 text-center food-category-section">
+        <h2 class="text-start" style="font-family: Gilroy;">What's on your mind?</h2>
+
+        <div class="row mt-4 justify-content-center">
+            <div class="col-6 col-sm-3 col-md-2 mb-4">
                 <a href="https://www.swiggy.com/collections/83631?collection_id=83631&search_context=pizza&tags=layout_CCS_Pizza&type=rcv2">
-                    <img style="border-radius: 50%;" src="pizza.jpg" alt="Pizza">
+                    <img class="img-fluid rounded-circle" src="pizza.jpg" alt="Pizza">
                 </a>
-                <h2 style="margin-left: 60px;">Pizza</h2>
+                <h5 class="mt-2">Pizza</h5>
             </div>
 
-            <div class="col-sm-2" style="margin-left: 140px;">
-                <a href="https://www.swiggy.com/collections/83633?collection_id=83633&search_context=northindian&tags=layout_CCS_NorthIndian&type=rcv2"><img style="border-radius: 50%;"  src="northindian.jpg"></a>
-                <h2>North Indian</h2>
+            <div class="col-6 col-sm-3 col-md-2 mb-4">
+                <a href="https://www.swiggy.com/collections/83633?collection_id=83633&search_context=northindian&tags=layout_CCS_NorthIndian&type=rcv2">
+                    <img class="img-fluid rounded-circle" src="northindian.jpg" alt="North Indian">
+                </a>
+                <h5 class="mt-2">North Indian</h5>
             </div>
 
-            <div class="col-sm-2" style="margin-left: 30px;">
-                <a href="https://www.swiggy.com/collections/83637?collection_id=83637&search_context=burger&tags=layout_CCS_Burger&type=rcv2"><img style="border-radius: 50%;" src="burger.jpg"></a>
-                <h2 style="margin-left: 70px;">Burgers</h2>
+            <div class="col-6 col-sm-3 col-md-2 mb-4">
+                <a href="https://www.swiggy.com/collections/83637?collection_id=83637&search_context=burger&tags=layout_CCS_Burger&type=rcv2">
+                    <img class="img-fluid rounded-circle" src="burger.jpg" alt="Burger">
+                </a>
+                <h5 class="mt-2">Burgers</h5>
             </div>
 
-            <div class="col-sm-2" style="margin-left: 150px;margin-right: 10px;">
-                <a href="https://www.swiggy.com/collections/83636?collection_id=83636&tags=layout_CCS_Chinese&type=rcv2"><img style="border-radius: 50%;" src="chinese.jpg"></a>
-                <h2 style="margin-left: 65px;">Chinese</h2>
-            </div
+            <div class="col-6 col-sm-3 col-md-2 mb-4">
+                <a href="https://www.swiggy.com/collections/83636?collection_id=83636&tags=layout_CCS_Chinese&type=rcv2">
+                    <img class="img-fluid rounded-circle" src="chinese.jpg" alt="Chinese">
+                </a>
+                <h5 class="mt-2">Chinese</h5>
+            </div>
         </div>
 
-        <div class="row" style="margin-top: 20px;">
-            <div class="col-sm-2" style="margin-left: 10px;">
+        <div class="row mt-4 justify-content-center">
+            <div class="col-6 col-sm-3 col-md-2 mb-4">
                 <a href="https://www.swiggy.com/collections/83673?collection_id=83673&tags=layout_CCS_Shakes&type=rcv2">
-                    <img style="border-radius: 50%;" src="shake.jpg" alt="Pizza">
+                    <img class="img-fluid rounded-circle" src="shake.jpg" alt="Shake">
                 </a>
-                <h2 style="margin-left: 60px;">Shake</h2>
+                <h5 class="mt-2">Shake</h5>
             </div>
 
-            <div class="col-sm-2" style="margin-left: 140px;">
-                <a href="https://www.swiggy.com/collections/80362?collection_id=80362&tags=layout_PavBhaji_Contextual&type=rcv2"><img style="border-radius: 50%;width: 200px;height: 200px;" src="pavbhaji.jpg"></a>
-                <h2>Pav Bhaji</h2>
+            <div class="col-6 col-sm-3 col-md-2 mb-4">
+                <a href="https://www.swiggy.com/collections/80362?collection_id=80362&tags=layout_PavBhaji_Contextual&type=rcv2">
+                    <img class="img-fluid rounded-circle" src="pavbhaji.jpg" alt="Pav Bhaji">
+                </a>
+                <h5 class="mt-2">Pav Bhaji</h5>
             </div>
 
-            <div class="col-sm-2" style="margin-left: 35px;">
-                <a href="https://www.swiggy.com/collections/80475?collection_id=80475&tags=layout_BAU_Contextual%2Cparatha%2Cads_pc_paratha&type=rcv2"><img style="border-radius: 50%;" src="paratha.jpg"></a>
-                <h2 style="margin-left: 70px;">Paratha</h2>
+            <div class="col-6 col-sm-3 col-md-2 mb-4">
+                <a href="https://www.swiggy.com/collections/80475?collection_id=80475&tags=layout_BAU_Contextual%2Cparatha%2Cads_pc_paratha&type=rcv2">
+                    <img class="img-fluid rounded-circle" src="paratha.jpg" alt="Paratha">
+                </a>
+                <h5 class="mt-2">Paratha</h5>
             </div>
 
-            <div class="col-sm-2" style="margin-left: 150px;margin-right: 10px;">
-                <a href="https://www.swiggy.com/collections/83639?collection_id=83639&search_context=biryani&tags=layout_CCS_Biryani&type=rcv2"><img style="border-radius: 50%;" src="biryani.jpg"></a>
-                <h2 style="margin-left: 65px;">Biryani</h2>
-            </div
-        </div>
-    </div>
-
-
-    <h1 style="font-size:50px; margin-top: 30px; text-align:center;">WHAT SWIGGY PROVIDES?</h1>
-
-    <div class="container-fluid mt-5">
-        <div class="row" style="margin-left: 20px;">
-            <div class="col-sm-3" >
-                <div class="card" style="width:250px;height: 350px;padding-top: 40px;">
-                    <h3>FOOD DELIVERY</h3>
-                    <h5 style="color: gray">FROM RESTURANTS</h5>
-                    <p style="color: red;">UPTO 60% OFF</p>
-                    <a href="https://ride.swiggy.com/?utm_source=Google-Sok&utm_medium=cpc&utm_campaign=de-brand-ahmedabad&gad_source=1&gclid=Cj0KCQjwyL24BhCtARIsALo0fSBOvVz1uzmJguD06YmwI-WmtQkfNjdjLWewWKGgccIZsc27jaHQ_oAaAuANEALw_wcB"><i class="bi bi-arrow-right-circle-fill" style="font-size: 50px;color: #ff6f00;padding-right: 10px;"></i></a>
-                    <img src="foodimg.jpg">
-                </div>
-            </div>
-
-            <div class="col-sm-3" >
-                <div class="card" style="width:250px;height: 350px;padding-top: 40px;">
-                    <h3>INSTAMART</h3>
-                    <h5 style="color: gray">INSTANT GROCERY</h5>
-                    <p style="color: red;">UPTO 60% OFF</p>
-                    <a href="https://www.swiggy.com/stores/instamart?utm_source=Google&utm_medium=cpc&utm_campaign=Perf_Instamart_NU_PerfMax_Feeds_Prospecting_Munchies_Beverages&gad_source=1&gclid=Cj0KCQjwyL24BhCtARIsALo0fSCFx2tTyLqcrTNNFAs8IE6ZqAhyAdJ-Ie86K4h4JvHs--f4cS_k8AQaAvkkEALw_wcB"><i class="bi bi-arrow-right-circle-fill" style="font-size: 50px;color: #ff6f00;padding-right: 10px;"></i></a>
-                    <img src="grocery.jpg">
-                </div>
-            </div>
-
-            <div class="col-sm-3" >
-                <div class="card" style="width:250px;height: 350px;padding-top: 40px;">
-                    <h3>DINEOUT</h3>
-                    <h5 style="color: gray">EAT OUT AND SAVE MORE</h5>
-                    <p style="color: red;">UPTO 50% OFF</p>
-                    <a href="https://www.swiggy.com/swiggy-dineout?utm_source=pr_google&utm_campaign=Perf_dineout_googlesearch_pivotroots_prospecting_brand_exact:19891444256&utm_medium=sem&utm_term=swiggy%20dineout:kwd-783841066699:713571427115&gad_source=1&gclid=Cj0KCQjwyL24BhCtARIsALo0fSBRE2kXzd3JDJ17YnldaJ2FyVZp9wdFZ9BpDxtbZDv2EH5biS6EdN0aAsz5EALw_wcB"><i class="bi bi-arrow-right-circle-fill" style="font-size: 50px;color: #ff6f00;padding-right: 10px;"></i></a>
-                    <img src="dineout.jpg">
-                </div>
-            </div>
-
-            <div class="col-sm-3" >
-                <div class="card" style="width:250px;height: 350px;padding-top: 40px;">
-                    <h3>GENIE</h3>
-                    <h5 style="color: gray">PICK UP & DROP</h5>
-                    <p></p>
-                    <a href="https://www.swiggy.com/swiggy-genie"><i class="bi bi-arrow-right-circle-fill" style="font-size: 50px;color: #ff6f00;padding-right: 10px;"></i></a>
-                    <img src="genie.jpg">
-                </div>
+            <div class="col-6 col-sm-3 col-md-2 mb-4">
+                <a href="https://www.swiggy.com/collections/83639?collection_id=83639&search_context=biryani&tags=layout_CCS_Biryani&type=rcv2">
+                    <img class="img-fluid rounded-circle" src="biryani.jpg" alt="Biryani">
+                </a>
+                <h5 class="mt-2">Biryani</h5>
             </div>
         </div>
     </div>
 
-    <h1 style="font-size:50px; margin-top: 50px; text-align:center;">Our Food</h1>
+    <div class="container my-5">
+        <h1 class="text-center mb-4">WHAT SWIGGY PROVIDES?</h1>
+        <div class="row text-center">
 
-    <div id="demo" class="carousel slide" data-bs-ride="carousel" style="margin-top: 20px;">
+            <!-- FOOD DELIVERY -->
+            <div class="col-sm-6 col-md-3 mb-4">
+                <div class="card h-100 shadow-sm">
+                    <div class="card-body">
+                        <h3 class="card-title">FOOD DELIVERY</h3>
+                        <h5 class="text-muted">FROM RESTAURANTS</h5>
+                        <p class="text-danger">UPTO 60% OFF</p>
+                        <a href="https://www.swiggy.com/restaurants">
+                            <i class="bi bi-arrow-right-circle-fill swiggy-icon"></i>
+                        </a>
+                    </div>
+                    <img src="foodimg.jpg" class="card-img-bottom" alt="Food Delivery">
+                </div>
+            </div>
+
+            <!-- INSTAMART -->
+            <div class="col-sm-6 col-md-3 mb-4">
+                <div class="card h-100 shadow-sm">
+                    <div class="card-body">
+                        <h3 class="card-title">INSTAMART</h3>
+                        <h5 class="text-muted">DAILY ESSENTIALS</h5>
+                        <p class="text-danger">DELIVERED IN MINUTES</p>
+                        <a href="https://www.swiggy.com/instamart?entryId=1234&entryName=mainTileEntry4&v=1">
+                            <i class="bi bi-arrow-right-circle-fill swiggy-icon"></i>
+                        </a>
+                    </div>
+                    <img src="instamart.jpg" class="card-img-bottom" alt="Instamart">
+                </div>
+            </div>
+
+            <!-- GENIE -->
+            <div class="col-sm-6 col-md-3 mb-4">
+                <div class="card h-100 shadow-sm">
+                    <div class="card-body">
+                        <h3 class="card-title">GENIE</h3>
+                        <h5 class="text-muted">PICKUP & DROP</h5>
+                        <p class="text-danger">ANYTHING YOU NEED</p>
+                        <a href="https://www.swiggy.com/swiggy-genie">
+                            <i class="bi bi-arrow-right-circle-fill swiggy-icon"></i>
+                        </a>
+                    </div>
+                    <img src="genie.jpg" class="card-img-bottom" alt="Genie Service">
+                </div>
+            </div>
+
+            <!-- DINEOUT -->
+            <div class="col-sm-6 col-md-3 mb-4">
+                <div class="card h-100 shadow-sm">
+                    <div class="card-body">
+                        <h3 class="card-title">DINEOUT</h3>
+                        <h5 class="text-muted">EXCLUSIVE DEALS</h5>
+                        <p class="text-danger">SAVE ON DINING</p>
+                        <a href="https://www.swiggy.com/dineout">
+                            <i class="bi bi-arrow-right-circle-fill swiggy-icon"></i>
+                        </a>
+                    </div>
+                    <img src="dineout.jpg" class="card-img-bottom" alt="Dineout">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <h1 class="text-center display-4 mt-5">Our Food</h1>
+
+    <div id="demo" class="carousel slide mt-3" data-bs-ride="carousel">
         <div class="carousel-indicators">
             <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
             <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
             <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
         </div>
 
-        <div class="carousel-inner">
-            <div class="carousel-item active text-align: center">
-              <img src="img.jpg" alt="Los Angeles" class="d-block" style="width: 700px;height: 300px;display: block;
-              margin-left: auto;
-              margin-right: auto;">
+        <div class="carousel-inner text-center">
+            <div class="carousel-item active">
+                <img src="img.jpg" alt="Los Angeles" class="d-block mx-auto img-fluid carousel-img">
             </div>
             <div class="carousel-item">
-              <img src="img(2).jpg" alt="Chicago" class="d-block" style="width:700px;height: 300px;display: block;
-              margin-left: auto;
-              margin-right: auto;">
+                <img src="img(2).jpg" alt="Chicago" class="d-block mx-auto img-fluid carousel-img">
             </div>
             <div class="carousel-item">
-              <img src="img(4).jpg" alt="New York" class="d-block" style="width:700px;height: 300px;display: block;
-              margin-left: auto;
-              margin-right: auto;">
+                <img src="img(4).jpg" alt="New York" class="d-block mx-auto img-fluid carousel-img">
             </div>
         </div>
 
         <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" style="background-color: black;"></span>
+            <span class="carousel-control-prev-icon bg-dark rounded-circle"></span>
         </button>
         <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
-            <span class="carousel-control-next-icon" style="background-color: black;"></span>
+            <span class="carousel-control-next-icon bg-dark rounded-circle"></span>
         </button>
     </div>
 
-    <h1 style="font-size:50px; text-align:center; margin-top: 30px;">Services</h1>
+    <h1 class="text-center display-4 mt-5">Services</h1>
 
-    <div style="text-align: center; ">
-        <video style="width: 50%;" controls>
+    <div class="text-center">
+        <video class="promo-video" controls>
             <source src="swiggy.mp4" type="video/mp4">
         </video> 
     </div>
+
 </body>
 </html>
